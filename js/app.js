@@ -73,7 +73,7 @@ function onArrowLeftPress(evt) {
   const ARR_LEFT_KEY_CODE = "ArrowLeft";
   const isArrLeftKey = evt.code === ARR_LEFT_KEY_CODE;
   if (isArrLeftKey) {
-    const souces = efault.map(({ original }) => original);
+    const sources = itemsDefault.map(({ original }) => original);
     let indexOfCurrentImg = sources.indexOf(refs.modalImage.src);
     if (indexOfCurrentImg === 0) {
       indexOfCurrentImg = sources.length;
